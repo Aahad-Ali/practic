@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">column 1</div>
+        <div class="column">column 2</div>
+        <div class="column">column 3</div>
+        <div class="column">column 4</div>
+      </div>
+      <div class="row">
+        <div class="column">column 5</div>
+        <div class="column">column 6</div>
+        <div class="column">column 7</div>
+        <div class="column">column 8</div>
+      </div>
+    </div>
     <div class="flex">
         <div class="items">first Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor a fugit dolores quo rem, modi nihil, accusantium laborum doloribus nesciunt? Excepturi distinctio, at consectetur exercitationem assumenda optio quidem beatae.</div>
         <div class="items">second Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor a fugit dolores quo rem, modi nihil, accusantium laborum doloribus nesciunt? Excepturi distinctio, at consectetur exercitationem assumenda optio quidem beatae.</div>
         <div class="items">third Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor a fugit dolores quo rem, modi nihil, accusantium laborum doloribus nesciunt? Excepturi distinctio, at consectetur exercitationem assumenda optio quidem beatae.</div>
         <div class="items">four Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor a fugit dolores quo rem, modi nihil, accusantium laborum doloribus nesciunt? Excepturi distinctio, at consectetur exercitationem assumenda optio quidem beatae.</div>
     </div>
+    <center>
+      <img src="../Downloads/476ea1d6-28d4-4de3-a025-a238537f11db.jpg" alt="" />
+    </center>
+
+    <input type="text" list="Language" />
+    <datalist id="Language">
+      <option value="java"></option>
+      <option value="html"></option>
+      <option value="css"></option>
+      <option value="JS"></option>
+    </datalist>
     <style>
         .flex{
             display: flex;
@@ -24,6 +49,45 @@
             border: 1px solid black;
             margin: 10px;
         }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      
+      }
+      .row {
+        display: table-row;
+        margin: 10px;
+        
+      }
+      .column {
+        display: table-cell;
+        border: 1px solid black;
+        padding: 10px;
+        flex: 1 1 100px;
+        background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 10px 10px;
+background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+      }
+
+      img {
+        -webkit-box-reflect: below 0px
+          linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+      }
     </style>
-</body>
+    <script>
+      let a = 10;
+      if (a === 10) {
+        let a = 20;
+      }
+      console.log(a);
+
+      let x = [1, 2, 3];
+
+      x.shift();
+      x.pop();
+
+      console.log(x.length);
+    </script>
+  </body>
 </html>
